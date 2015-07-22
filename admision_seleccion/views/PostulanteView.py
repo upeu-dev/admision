@@ -23,8 +23,8 @@ class ApiEndpoint(ProtectedResourceView):
 class PostulanteSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
-        model = User
-        fields = ('id', 'name', 'codigo')
+        model = Postulante
+        fields = ('id', 'nombre', 'codigo')
 
 
 class MiPermission(permissions.BasePermission):

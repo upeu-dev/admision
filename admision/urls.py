@@ -18,4 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+
+    url(r'^seleccion/', include('admision_seleccion.urls')),
+
 ]
