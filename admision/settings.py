@@ -46,6 +46,8 @@ INSTALLED_APPS = (
     'corsheaders',
 
     'admision_seleccion',
+
+    'configs'
 )
 
 CORS_ORIGIN_ALLOW_ALL = True

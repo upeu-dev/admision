@@ -1,19 +1,19 @@
 # _*_ coding: utf-8 _*_
-import uuid
 from django.db import models
-from .Modalidad import Modalidad
+import uuid
 
 
-class Postulante(models.Model):
+class Modalidad(models.Model):
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     nombre = models.CharField(max_length=60)
     codigo = models.CharField(max_length=10, null=True, blank=True)
-    modalidad = models.ForeignKey(Modalidad, null=True, blank=True)
+    #jerarquia_acad = models.ForeignKey(JerarquiaAcad, null=True, blank=True)
 
     class Meta:
-        verbose_name = "Postulante"
-        verbose_name_plural = "Postulantes"
+
+        verbose_name = "Modalidad"
+        verbose_name_plural = "Modalidades"
 
     def __str__(self):
         return self.nombre

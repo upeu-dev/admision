@@ -5,10 +5,11 @@ from django.conf.urls import include, url
 from rest_framework import routers
 from admision_seleccion.views.PostulanteView import PostulanteViewSet, \
     ApiEndpoint
-
+from admision_seleccion.views.ModalidadView import ModalidadViewSet
 
 router = routers.DefaultRouter()
 router.register(r'postulantes', PostulanteViewSet)
+router.register(r'modalidades', ModalidadViewSet)
 
 
 urlpatterns = [

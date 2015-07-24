@@ -24,7 +24,7 @@ class PostulanteSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Postulante
-        fields = ('id', 'nombre', 'codigo')
+        fields = ('id', 'nombre', 'codigo', 'modalidad')
 
 
 class MiPermission(permissions.BasePermission):
