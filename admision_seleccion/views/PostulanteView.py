@@ -20,11 +20,11 @@ class ApiEndpoint(ProtectedResourceView):
         return HttpResponse('Hello, OAuth2!')
 
 
-class PostulanteSerializer(serializers.HyperlinkedModelSerializer):
+class PostulanteSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Postulante
-        fields = ('id', 'nombre', 'codigo', 'modalidad')
+        #fields = ('id', 'nombre', 'codigo', 'modalidad')
 
 
 class MiPermission(permissions.BasePermission):
